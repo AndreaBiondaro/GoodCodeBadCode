@@ -1,7 +1,5 @@
 package it.addvalue.codesmells.good.largeclass;
 
-import java.util.ArrayList;
-
 public class Game {
   Questions questions = new Questions();
   Players players = new Players();
@@ -129,6 +127,6 @@ public class Game {
   }
 
   private boolean didPlayerWin() {
-    return !(players.getPurse(currentPlayer) == 6);
+    return players.getPurse(currentPlayer) != 6;
   }
 }

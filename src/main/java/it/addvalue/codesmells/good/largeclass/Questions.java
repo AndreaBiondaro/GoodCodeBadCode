@@ -3,10 +3,10 @@ package it.addvalue.codesmells.good.largeclass;
 import java.util.LinkedList;
 
 public class Questions {
-  private LinkedList<String> popQuestions = new LinkedList();
-  private LinkedList<String> scienceQuestions = new LinkedList();
-  private LinkedList<String> sportsQuestions = new LinkedList();
-  private LinkedList<String> rockQuestions = new LinkedList();
+  private LinkedList<String> popQuestions = new LinkedList<>();
+  private LinkedList<String> scienceQuestions = new LinkedList<>();
+  private LinkedList<String> sportsQuestions = new LinkedList<>();
+  private LinkedList<String> rockQuestions = new LinkedList<>();
 
   public Questions() {
     for (int i = 0; i < 50; i++) {
