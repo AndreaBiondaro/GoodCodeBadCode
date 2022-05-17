@@ -19,35 +19,35 @@ public class PubTest {
   }
 
   @Test
-  @DisplayName("When we order one beer, then the price is 74 kr.")
-  public void oneBeerTest() {
+  @DisplayName("When we order one coke, then the price is 74 €.")
+  public void oneCokeTest() {
     int actualPrice = pub.computeCost(Pub.ONE_COKE, false, 1);
     assertEquals(74, actualPrice);
   }
 
   @Test
-  @DisplayName("When we order one cider, then the price is 103 kr.")
+  @DisplayName("When we order one cider, then the price is 103 €.")
   public void testCidersAreCostly() throws Exception {
     int actualPrice = pub.computeCost(Pub.ONE_CIDER, false, 1);
     assertEquals(103, actualPrice);
   }
 
   @Test
-  @DisplayName("When we order a proper cider, then the price is 110 kr.")
-  public void testProperCidersAreEvenMoreExpensive() throws Exception {
+  @DisplayName("When we order a beer, then the price is 110 €.")
+  public void testBeerAreEvenMoreExpensive() throws Exception {
     int actualPrice = pub.computeCost(Pub.ONE_BEER, false, 1);
     assertEquals(110, actualPrice);
   }
 
   @Test
-  @DisplayName("When we order a gin and tonic, then the price is 115 kr.")
+  @DisplayName("When we order a gin and tonic, then the price is 115 €.")
   public void testACocktail() throws Exception {
     int actualPrice = pub.computeCost(Pub.GIN_TONIC, false, 1);
     assertEquals(115, actualPrice);
   }
 
   @Test
-  @DisplayName("When we order a bacardi special, then the price is 127 kr.")
+  @DisplayName("When we order a bacardi special, then the price is 127 €.")
   public void testBacardiSpecial() throws Exception {
     int actualPrice = pub.computeCost(Pub.BACARDI_SPECIAL, false, 1);
     assertEquals(127, actualPrice);
