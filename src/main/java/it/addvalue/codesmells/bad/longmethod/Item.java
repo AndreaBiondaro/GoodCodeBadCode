@@ -1,5 +1,8 @@
 package it.addvalue.codesmells.bad.longmethod;
 
+// Code taken from:
+// https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/Java/src/main/java/com/gildedrose/Item.java
+
 public class Item {
 
   public String name;

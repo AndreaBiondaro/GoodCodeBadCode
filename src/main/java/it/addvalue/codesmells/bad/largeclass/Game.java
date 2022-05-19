@@ -6,10 +6,10 @@ import java.util.LinkedList;
 // Code taken from:
 // https://github.com/caradojo/trivia/blob/6e2188165536b2e3b4d4d9e2a4be72f45e720f8d/java/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java
 
-// Questa classe si occupa di gestire:
-// - gestione della logica di gioco
-// - gestione della creazione delle domande
-// - gestione dei giocatori
+// This class has different responsibilities:
+// - Manages the logic of the game
+// - Creation of the questions
+// - Manages the players
 
 public class Game {
   ArrayList players = new ArrayList();
